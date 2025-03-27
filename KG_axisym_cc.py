@@ -97,7 +97,7 @@ def xxP(i, x):
 # P_xx = np.array([[legendre_poly_xx(i, x_val) for x_val in x__col] for i in range(px+1)])
 
 
-#complete basis
+#complete bases
 def Psi(n, r, x):
     list = [SB(2 * i, r) * P(j, x)
             for i in range(N + 1) for j in range(px + 1)]
@@ -166,7 +166,6 @@ xxPsim = [[SB(2 * i, r_col[k]) * xxP(j, x__col[n])
 inv_psi = np.linalg.inv(Psim)
 # print(inv_psi.shape)
 
-print('rodou?')
 
 
 # In[67]:
